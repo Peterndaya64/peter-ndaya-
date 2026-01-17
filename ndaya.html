@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NIH DAVE | Online Cyber Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            padding:0;
+            background:#f4f6f9;
+            color:#333;
+        }
+        header{
+            background:#0b5ed7;
+            color:white;
+            padding:40px 20px;
+            text-align:center;
+        }
+        section{
+            padding:40px 20px;
+            max-width:1100px;
+            margin:auto;
+        }
+        .services{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+        .service-box{
+            background:#0d6efd;
+            color:white;
+            padding:20px;
+            border-radius:10px;
+        }
+        .service-box h3{
+            margin-top:0;
+            font-weight:bold;
+        }
+        .contact-box{
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+        input, textarea{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+            border-radius:5px;
+            border:1px solid #ccc;
+            font-size:15px;
+        }
+        button{
+            background:#0d6efd;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+        button:hover{
+            background:#084298;
+        }
+        .success{
+            color:green;
+            font-weight:bold;
+            display:none;
+            margin-top:10px;
+        }
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:25px;
+            margin-top:40px;
+        }
+        footer span{
+            display:block;
+            margin:6px 0;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float{
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            background:#25d366;
+            color:white;
+            border-radius:50px;
+            padding:12px 18px;
+            font-size:16px;
+            text-decoration:none;
+            box-shadow:0 4px 8px rgba(0,0,0,0.3);
+            z-index:1000;
+        }
+        .whatsapp-float:hover{
+            background:#1ebe5d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to NIH DAVE Online Cyber Services</h1>
+    <p>Your trusted partner for fast, reliable, and professional online solutions.</p>
+</header>
+
+<section>
+    <h2>Our Services</h2>
+    <div class="services">
+
+        <div class="service-box">
+            <h3>HELB Application</h3>
+            <p>Accurate assistance with HELB loan applications, corrections, and follow-ups.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>KUCCPS Application</h3>
+            <p>Professional KUCCPS applications, course revisions, and placement support.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Ethical Hacking & Cybersecurity</h3>
+            <p>Cybersecurity testing, online safety guidance, and digital protection solutions.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Website Creation</h3>
+            <p>Modern, responsive, and professional websites for businesses and individuals.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Forex Trading</h3>
+            <p>Forex trading guidance, analysis, and mentorship for informed trading decisions.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+        <form onsubmit="sendMessage(); return false;">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" value="DAVYMNOMA3@GMAIL.COM" readonly>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+            <div class="success" id="successMsg">Message sent successfully</div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <span>📱 WhatsApp: +254718778122</span>
+    <span>📘 Facebook: @nihdave</span>
+    <span>📸 Instagram: @davymnoma</span>
+    <span>💳 M-Pesa Payment Number: <strong>254720423040</strong></span>
+    <span>© 2026 NIH DAVE Cyber Services</span>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a class="whatsapp-float"
+   href="https://wa.me/254718778122"
+   target="_blank">
+   💬 WhatsApp Us
+</a>
+
+<script>
+    function sendMessage(){
+        document.getElementById("successMsg").style.display="block";
+    }
+</script>
+
+</body>
+</html>
